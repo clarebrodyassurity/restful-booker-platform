@@ -152,7 +152,7 @@ public class BookingDB {
         if(bookingIds.size() == 0){
             return false;
         } else if(bookingIds.size() == 1) {
-            return bookingIds.get(0) != bookingToCheck.getBookingid();
+            return bookingIds.get(0) == bookingToCheck.getBookingid();
         } else {
             return true;
         }
